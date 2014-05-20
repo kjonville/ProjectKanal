@@ -26,4 +26,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)Btn_Arno:(id)sender {
+    NSLog(@"Ik vind je mama best wel leuk!");
+}
 @end
