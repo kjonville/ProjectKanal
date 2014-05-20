@@ -460,6 +460,7 @@
 				9FB06D22192B5E1D0019F9AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9FB06D23192B5E1D0019F9AC /* Build configuration list for PBXNativeTarget "FestivalkanalTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +469,7 @@
 				9FB06D25192B5E1D0019F9AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
