@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>854D307D-1205-44DA-93A3-7218855AFC37</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Festivalkanal</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B8C2FFD3-7CC9-4B9E-890B-5E477A9A293B</key>
+		<string>https://github.com/kjonville/ProjectKanal.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Festivalkanal/Festivalkanal.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B8C2FFD3-7CC9-4B9E-890B-5E477A9A293B</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kjonville/ProjectKanal.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B8C2FFD3-7CC9-4B9E-890B-5E477A9A293B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B8C2FFD3-7CC9-4B9E-890B-5E477A9A293B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ProjectKanal</string>
+		</dict>
+	</array>
+</dict>
+</plist>
