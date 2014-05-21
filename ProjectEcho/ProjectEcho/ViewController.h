@@ -12,8 +12,11 @@
 #import "Model.h"
 #import "modelDays.h"
 #import "modelStagedays.h"
+#import <MapKit/MapKit.h>
 
-@interface ViewController : UIViewController <UITabBarDelegate, ModelProtocol, ModelDaysProtocol, ModelStagedaysProtocol>
+@interface ViewController : UIViewController <UITabBarDelegate, ModelProtocol, ModelDaysProtocol, ModelStagedaysProtocol>{
+    MKMapView *mapview;
+}
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 @property (weak, nonatomic) IBOutlet UITabBar *tabbar;
 @property (weak, nonatomic) IBOutlet UILabel *titleLb;
@@ -21,11 +24,18 @@
 @property (weak, nonatomic) IBOutlet UIButton *nextEventBtn;
 @property (weak, nonatomic) IBOutlet UIButton *prevEventBtn;
 @property (weak, nonatomic) IBOutlet UIButton *showHideBtn;
+@property (nonatomic, retain) IBOutlet MKMapView *mapview;
+
 
 - (IBAction)nextEventBtn:(UIButton *)sender;
 - (IBAction)prevEventBtn:(UIButton *)sender;
 -(UIImage *)drawImage:(UIImage*)profileImage withBadge:(UIImage *)badge;
 - (IBAction)hide:(UIButton *)sender;
+-(IBAction)Events:(id)sender;
+-(IBAction)Food:(id)sender;
+-(IBAction)Toilet:(id)sender;
+-(IBAction)GetLocation:(id)sender;
+-(IBAction)Direction:(id)sender;
 
 
 @end

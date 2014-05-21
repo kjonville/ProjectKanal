@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MapPin.h"
 
 @interface ViewController ()
 
@@ -271,6 +272,147 @@
         self.indexx = NO;
         NSLog(self.indexx ? @"Yes" : @"No");
     }
+}
+
+-(IBAction)Events:(id)sender {
+    
+    //verwijder vorige annotations
+    
+    for (id annotation in mapview.annotations) {
+        NSLog(@"%@", annotation);
+        NSInteger toRemoveCount = mapview.annotations.count;
+        NSMutableArray *toRemove = [NSMutableArray arrayWithCapacity:toRemoveCount];
+        [toRemove addObject:annotation];
+        [mapview removeAnnotations:toRemove];
+    }
+    
+    //voorbeeld1
+    
+    MKCoordinateRegion region = { {0.0, 0.0}, {0.0, 0.0}};
+    region.center.latitude = 50.833333;
+    region.center.longitude = 4.3;
+    region.span.longitudeDelta = 0.01f;
+    region.span.latitudeDelta = 0.01f;
+    [mapview setRegion:region animated:NO];
+    
+    MapPin *ann = [[MapPin alloc] init];
+    ann.title = @"Event";
+    ann.subtitle = @"Dancing";
+    ann.coordinate = region.center;
+    [mapview addAnnotation:ann];
+    
+    //voorbeeld2
+    
+    MKCoordinateRegion regione = { {0.0, 0.0}, {0.0, 0.0}};
+    regione.center.latitude = 50.833833;
+    regione.center.longitude = 4.3;
+    regione.span.longitudeDelta = 0.01f;
+    regione.span.latitudeDelta = 0.01f;
+    [mapview setRegion:regione animated:NO];
+    
+    MapPin *annn = [[MapPin alloc] init];
+    annn.title = @"Event";
+    annn.subtitle = @"Dancing";
+    annn.coordinate = regione.center;
+    [mapview addAnnotation:annn];
+    
+    //voorbeeld3
+    
+    MKCoordinateRegion regionee = { {0.0, 0.0}, {0.0, 0.0}};
+    regionee.center.latitude = 50.833233;
+    regionee.center.longitude = 4.3;
+    regionee.span.longitudeDelta = 0.01f;
+    regionee.span.latitudeDelta = 0.01f;
+    [mapview setRegion:regionee animated:NO];
+    
+    MapPin *annnn = [[MapPin alloc] init];
+    annnn.title = @"Event";
+    annnn.subtitle = @"Dancing";
+    annnn.coordinate = regione.center;
+    [mapview addAnnotation:annnn];
+    
+    //voorbeeld4
+    
+    MKCoordinateRegion regio = { {0.0, 0.0}, {0.0, 0.0}};
+    regio.center.latitude = 50.833533;
+    regio.center.longitude = 4.3;
+    regio.span.longitudeDelta = 0.01f;
+    regio.span.latitudeDelta = 0.01f;
+    [mapview setRegion:regio animated:NO];
+    
+    MapPin *an = [[MapPin alloc] init];
+    an.title = @"Event";
+    an.subtitle = @"Dancing";
+    an.coordinate = regione.center;
+    [mapview addAnnotation:an];
+    
+}
+
+-(IBAction)Food:(id)sender {
+    
+    //verwijder vorige annotations
+    
+    for (id annotation in mapview.annotations) {
+        NSLog(@"%@", annotation);
+        NSInteger toRemoveCount = mapview.annotations.count;
+        NSMutableArray *toRemove = [NSMutableArray arrayWithCapacity:toRemoveCount];
+        [toRemove addObject:annotation];
+        [mapview removeAnnotations:toRemove];
+    }
+    
+    MKCoordinateRegion toilet = { {0.0, 0.0}, {0.0, 0.0}};
+    toilet.center.latitude = 50.833100;
+    toilet.center.longitude = 4.3;
+    toilet.span.longitudeDelta = 0.01f;
+    toilet.span.latitudeDelta = 0.01f;
+    [mapview setRegion:toilet animated:NO];
+    
+    MapPin *ann = [[MapPin alloc] init];
+    ann.title = @"Toilet";
+    ann.subtitle = @"Women";
+    ann.coordinate = toilet.center;
+    [mapview addAnnotation:ann];
+    
+}
+
+-(IBAction)Toilet:(id)sender {
+    
+    //verwijder vorige annotations
+    
+    for (id annotation in mapview.annotations) {
+        NSLog(@"%@", annotation);
+        NSInteger toRemoveCount = mapview.annotations.count;
+        NSMutableArray *toRemove = [NSMutableArray arrayWithCapacity:toRemoveCount];
+        [toRemove addObject:annotation];
+        [mapview removeAnnotations:toRemove];
+    }
+    
+    MKCoordinateRegion toilet = { {0.0, 0.0}, {0.0, 0.0}};
+    toilet.center.latitude = 50.833100;
+    toilet.center.longitude = 4.3;
+    toilet.span.longitudeDelta = 0.01f;
+    toilet.span.latitudeDelta = 0.01f;
+    [mapview setRegion:toilet animated:NO];
+    
+    MapPin *ann = [[MapPin alloc] init];
+    ann.title = @"Toilet";
+    ann.subtitle = @"Women";
+    ann.coordinate = toilet.center;
+    [mapview addAnnotation:ann];
+    
+}
+
+-(IBAction)GetLocation:(id)sender{
+    
+    mapview.showsUserLocation = YES;
+    
+}
+
+-(IBAction)Direction:(id)sender{
+    
+    NSString *urlString = @"http://maps.apple.com/maps?daddr=50.833333,4.3";
+    [[UIApplication sharedApplication] openURL: [NSURL URLWithString:urlString]];
+    
 }
 
 -(UIImage *)drawImage:(UIImage*)profileImage withBadge:(UIImage *)badge

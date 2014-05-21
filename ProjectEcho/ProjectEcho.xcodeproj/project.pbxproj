@@ -36,6 +36,7 @@
 		9ABF3F57192C97BE00CEA317 /* DaysDb.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF3F56192C97BE00CEA317 /* DaysDb.m */; };
 		9ABF3F5B192C9CC100CEA317 /* modelStagedays.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF3F5A192C9CC100CEA317 /* modelStagedays.m */; };
 		9ABF3F5E192C9CDD00CEA317 /* StagedaysDb.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF3F5D192C9CDD00CEA317 /* StagedaysDb.m */; };
+		BF3257FB192CAE79005819BF /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3257FA192CAE79005819BF /* MapPin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,8 @@
 		9ABF3F5A192C9CC100CEA317 /* modelStagedays.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = modelStagedays.m; sourceTree = "<group>"; };
 		9ABF3F5C192C9CDD00CEA317 /* StagedaysDb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StagedaysDb.h; sourceTree = "<group>"; };
 		9ABF3F5D192C9CDD00CEA317 /* StagedaysDb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StagedaysDb.m; sourceTree = "<group>"; };
+		BF3257F9192CAE79005819BF /* MapPin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPin.h; sourceTree = "<group>"; };
+		BF3257FA192CAE79005819BF /* MapPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +161,7 @@
 		9A809DFD192833CE002E946B /* ProjectEcho */ = {
 			isa = PBXGroup;
 			children = (
+				BF3257F8192CAE4E005819BF /* Map */,
 				9ABF3F58192C9C9300CEA317 /* stagedaysDB */,
 				9ABF3F51192C975700CEA317 /* DaysDb */,
 				9ABF3F50192C973500CEA317 /* stagesDb */,
@@ -246,6 +250,15 @@
 				9A809E0D192833CE002E946B /* ViewController.m */,
 			);
 			name = home;
+			sourceTree = "<group>";
+		};
+		BF3257F8192CAE4E005819BF /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				BF3257F9192CAE79005819BF /* MapPin.h */,
+				BF3257FA192CAE79005819BF /* MapPin.m */,
+			);
+			name = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,6 +369,7 @@
 				9ABF3F5B192C9CC100CEA317 /* modelStagedays.m in Sources */,
 				9A809E08192833CE002E946B /* AppDelegate.m in Sources */,
 				9ABF3F49192B75FA00CEA317 /* Model.m in Sources */,
+				BF3257FB192CAE79005819BF /* MapPin.m in Sources */,
 				9AB2116B1928D8230060E16D /* EventDetailViewController.m in Sources */,
 				9ABF3F5E192C9CDD00CEA317 /* StagedaysDb.m in Sources */,
 				9ABF3F4C192B763000CEA317 /* StagesDb.m in Sources */,
