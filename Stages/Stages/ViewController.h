@@ -1,0 +1,12 @@
+//
+//  ViewController.h
+//  Stages
+//
+//  Created by MEERT Kenneth (s) on 21/05/14.
+//  Copyright (c) 2014 Kenneth Meert. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+@end
